@@ -39,4 +39,16 @@ function filtrar(par){
     }
 }
 
-console.log(filtrar(arr))
+//! Obtener Suma de Todo el Array
+function sumaTotal(par){
+    let total = par.reduce( (acum, sum) => {
+        return acum + sum
+    })
+    return `La suma total es: ${total}`
+}
+
+//! Multiplicar Cada Item del Array x2
+function multiplicarX2(par){
+    let mX2 = par.map( par => par * 2)
+    return mX2
+}
