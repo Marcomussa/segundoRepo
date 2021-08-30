@@ -52,3 +52,9 @@ function multiplicarX2(par){
     let mX2 = par.map( par => par * 2)
     return mX2
 }
+
+//! Potencia
+function potecia(par, pot){
+    return par ** pot
+}
+
