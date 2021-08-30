@@ -1,4 +1,4 @@
-let arr = [45,2,94,41,35,21,25,66,47,353,6,89,88,34]
+let arr = [45,2,94,41,35,21,25,66,47,353,6,89,88,34,0]
 
 //! Mostrar Numeros Pares e Impares
 function mostrarPares(par){
