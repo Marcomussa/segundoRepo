@@ -22,22 +22,25 @@ function mostrarPares(par){
 }
 
 //! Mostrar Numeros Mayores/Menores a 10
-function filtrar(par){
-    let mayoresADiez = []
-    let menoresADiez = []
+function filtrar(par, filtro){
+    let mayoresA = []
+    let menoresA = []
     let filtrarMayorADiez = par.filter( (par) => {
-        return par >= 10
+        return par >= filtro
     })
     let filtrarMenorADiez = par.filter( (par) => {
-        return par <= 10
+        return par <= filtro
     })
-    mayoresADiez.push(...filtrarMayorADiez)
-    menoresADiez.push(...filtrarMenorADiez)
+    mayoresA.push(...filtrarMayorADiez)
+    menoresA.push(...filtrarMenorADiez)
     return {
-        'Menores a 10:': menoresADiez,
-        'Mayores a 10:': mayoresADiez
+        'Filtro': filtro,
+        'Menores:': menoresA,
+        'Mayores:': mayoresA
     }
 }
+console.log(filtrar(arr,10))
+console.log(filtrar(arr,50))
 
 //! Obtener Suma de Todo el Array
 function sumaTotal(par){
