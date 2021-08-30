@@ -21,7 +21,7 @@ function mostrarPares(par){
     }
 }
 
-//! Mostrar Numeros Mayores/Menores a 10
+//! Mostrar Numeros Mayores/Menores a un Parametro
 function filtrar(par, filtro){
     let mayoresA = []
     let menoresA = []
